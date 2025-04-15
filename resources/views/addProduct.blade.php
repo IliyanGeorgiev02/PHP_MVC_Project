@@ -52,17 +52,17 @@
 
       <div class="form-group">
         <label for="name">Product Name</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name"  value="{{ old('name') }}" required>
       </div>
 
       <div class="form-group">
         <label for="price">Price ($)</label>
-        <input type="number" name="price" id="price" step="0.01" required>
+        <input type="number" name="price" id="price" step="0.01"  value="{{ old('price') }}" required>
       </div>
 
       <div class="form-group">
         <label for="description">Description</label>
-        <textarea name="description" id="description" rows="4" required></textarea>
+        <textarea name="description" id="description" rows="4"  value="{{ old('description') }}" required></textarea>
       </div>
 
       <div class="form-group">
